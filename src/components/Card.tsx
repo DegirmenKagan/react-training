@@ -1,8 +1,8 @@
 import CodeBlock from "./CodeBlock";
 
-type Props = { header: string; desc: string; code: string };
+export type TCard = { header: string; desc: string; code: string };
 
-const Card = (props: Props) => {
+const Card = (props: TCard) => {
   return (
     <div className="card">
       <h1>{props.header}</h1>
