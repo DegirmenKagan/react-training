@@ -1,6 +1,6 @@
 import "./App.css";
 import Card from "./components/Card";
-import { CardArr } from "./mock/cardMock";
+import { CardArr } from "./mock/CardMock";
 
 function App() {
   return (

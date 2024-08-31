@@ -4,8 +4,8 @@ import CodePreview from "./CodePreview";
 export type TCard = {
   header: string;
   desc: string;
-  code: string;
-  component: JSX.Element;
+  code?: string;
+  component?: JSX.Element;
 };
 
 const Card = (props: TCard) => {
@@ -13,8 +13,8 @@ const Card = (props: TCard) => {
     <div className="card">
       <h1>{props.header}</h1>
       <p>{props.desc}</p>
-      <CodeBlock text={props.code} />
-      <CodePreview component={props.component} />
+      {props.code ? <CodeBlock text={props.code} /> : <></>}
+      {props.component ? <CodePreview component={props.component} /> : <></>}
     </div>
   );
 };
