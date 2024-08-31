@@ -1,4 +1,5 @@
 import { TCard } from "../components/Card";
+import FormValidation from "./FormValidation";
 
 export const CardArr: TCard[] = [
   {
@@ -26,7 +27,6 @@ const handleValidation = () => {
   <div>
     <h2>Form Validation Example</h2>
     <input
-      ref={inputRef}
       type="text"
       value={inputValue}
       onChange={(e) => setInputValue(e.target.value)}
@@ -37,5 +37,6 @@ const handleValidation = () => {
 
 
 `,
+    component: <FormValidation />,
   },
 ];

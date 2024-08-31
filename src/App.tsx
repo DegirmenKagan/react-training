@@ -12,6 +12,7 @@ function App() {
             header={card.header}
             desc={card.desc}
             code={card.code}
+            component={card.component}
           />
         ))}
       </div>
